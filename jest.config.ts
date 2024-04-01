@@ -12,6 +12,7 @@ const config: Config.InitialOptions = {
     "\\.(css|scss)$": "identity-obj-proxy",
   },
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  transformIgnorePatterns: ["node_modules/(?!axios)/"],
 };
 
 export default config;
